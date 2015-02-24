@@ -1,0 +1,6 @@
+node_modules
+.editorconfig
+texput.log
+dist/cv.log
+dist/cv.aux
+dist/cv.out

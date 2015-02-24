@@ -1,0 +1,13 @@
+{
+  "name": "y",
+  "description": "my resume",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-latex": "*",
+    "grunt-open": "^0.2.3"
+  }
+}
