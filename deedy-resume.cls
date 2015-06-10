@@ -90,10 +90,9 @@ Last Updated on \today % Last Updated text
 \newcommand{\insectionspace}{\vspace{4pt}} % Defines a command to add a set amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
-\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
-\flushleft
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
