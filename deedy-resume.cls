@@ -75,8 +75,8 @@ Last Updated on \today % Last Updated text
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/lato/]{Lato-LigIta}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
 \\[\baseheight] % whitespace before line
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
-\vspace{\fpeval{-\baseheight*\golden}}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{\fpeval{\baseheight / \golden^4}}} % Horizontal rule
+\vspace{\fpeval{-\baseheight*\golden^3}}
 }
 
 %----------------------------------------------------------------------------------------
