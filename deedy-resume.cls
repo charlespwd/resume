@@ -55,11 +55,11 @@ Last Updated on \today % Last Updated text
 \centering{ % Center the name
 \fontsize{40pt}{60pt} % Font size
 \fontspec[Path = fonts/raleway/]{Raleway-Thin}\selectfont #1 % First name font
-\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\selectfont #2 % Last name font
+\fontspec[Path = fonts/raleway/]{Raleway-Light}\selectfont #2 % Last name font
 } \\[5pt] % Whitespace between the name and contact information
 \centering{ % Center the contact information
 \color{headings} % Use the headings color
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
+\fontspec[Path = fonts/lato/]{Lato-LigIta}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
 \\[0.20cm] % whitespace before line
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
 }
