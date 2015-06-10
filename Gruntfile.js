@@ -33,7 +33,7 @@ module.exports = function (grunt) {
 
     watch: {
       latex: {
-        files: '**/*.tex',
+        files: ['**/*.tex', '**/*.cls'],
         tasks: ['latex', 'latex:pdf']
       },
       livereload: {
