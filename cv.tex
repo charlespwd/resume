@@ -20,6 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4
+\usepackage{nopageno}
 
 \begin{document}
 
@@ -29,21 +30,10 @@
 
 \namesection{Charles P.}{Clermont}{ % Your name
 % \urlstyle{same}\url{http://cpclermont.com} \\ % Your website, LinkedIn profile or other web address
-\href{mailto:charles@cpclermont.com}{charles@cpclermont.com} | skype:
-charles.pclermont | +1-514-746-6175 }
+github: \href{http://github.com/charlespwd}{charlespwd} \thinspace | linkedin: \href{http://ca.linkedin.com/in/cpclermont}{cpclermont} \thinspace | skype: charles.pclermont \\
+\href{mailto:charles@cpclermont.com}{charles@cpclermont.com} \thinspace | +1-514-746-6175 \\[\fpeval{\baseheight}]
+}
 
-%
-% %------------------------------------------------
-% % Links
-% %------------------------------------------------
-%
-% \section{Links}
-%
-% % Blog: \href{http://cpclermont.com/blog}{\bf cpclermont.com/blog} \\
-% GitHub: \href{https://GitHub.com/charlespwd}{\bf charlespwd} \\
-% LinkedIn: \href{http://ca.linkedin.com/in/charlespclermont}{\bf charlespclermont} \\
-%
-% \sectionspace % Some whitespace after the section
 %
 % %------------------------------------------------
 % % Summary
@@ -130,7 +120,8 @@ charles.pclermont | +1-514-746-6175 }
 
 Independent front-end developer with a degree in engineering. Self-taught
 in the ways of computers since 2003. My specialties are JavaScript,
-ember, D3, backbone, node.js, Clojure and ClojureScript.
+ember, backbone, node.js, D3, Clojure and ClojureScript. I make web apps.
+
 
 \sectionspace % Some whitespace after the section
 
@@ -178,27 +169,85 @@ Groups: HackMcGill, McGill Outdoors Club. CGPA: 3.6
 \descript{| \thinspace Independent}
 
 \location{May 2014 – Present \thinspace | \thinspace Montreal, QC}
+
+\\[\fpeval{\baseheight}]
+
+Role(s):
+
 \begin{tightitemize}
-    \item Lead the front-end of Keylocation.sg.
-    \item Refactored legacy codebases, killing 1000+ lines of code by using functional programming techniques and leveraging the framework.
-    \item Contributed to and maintained Open Source Software.
-    \item Technology used across different projects: EmberJS, NodeJS, VanillaJS, ES6, Clojure and ClojureScript, Ruby on Rails, Web Audio API, Vagrant, AWS, Heroku, git
+    \item Lead a team of freelancers for the front-end of Keylocation.sg;
+    \item Perform code review, and offer recommendations to clients;
+    \item Contribute to and maintain Open Source Software;
+    \item Write tested, efficient and maintainable software;
 \end{tightitemize}
 
+\\[\fpeval{\baseheight}]
+
+Product(s):
+\begin{tightitemize}
+    \item The front-end of Keylocation.sg; an EmberJS application;
+    \item An in-browser recorded-audio to visualisation library;
+    \item Contributions to Open Source Software\textemdash Bestcase, Request, peaks.js;
+    \item Open Source libraries\textemdash myMinerva, McGill-Minerva-API;
+    \item My-McGill.ca\textemdash a service that sends an email notification when new grades come in.;
+    \item Store Statistics\textemdash a Shopify app;
+    \item Time Travel Pong\textemdash a game.
+\end{tightitemize}
+
+\\[\fpeval{\baseheight}]
+
+Technologies: \\
+\begin{tightitemize}
+    \item Keylocation\textemdash EmberJS, node.js, jade, LESS, PostgreSQL, grunt, vagrant, git;
+    \item Audio Library\textemdash ES6, browserify, grunt, bower, UMD, AngularJS(as example use), git;
+    \item Request, peaks.js, McGill-Minerva-API\textemdash plain ol' javascript, node.js, grunt, git;
+    \item Bestcase, myMinerva, my-mcgill.ca\textemdash Clojure, ClojureScript, MongoDB, HTML5, git;
+    \item Store Statistics\textemdash Clojure, ES6, HTML5, SASS, core.async, D3, grunt, git;
+    \item Time Travel Pong\textemdash ClojureScript, git;
+\end{tightitemize}
+
+
 \sectionspace % Some whitespace after the section
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+\namesection{Charles P.}{Clermont}{}
+
+\section{EXPERIENCE~\small{Cont'd}}
 
 \runsubsection{Bombardier Aerospace}
 \descript{| \thinspace Intern Developer}
 
 \location{June 2010 – Jan 2014 \thinspace | \thinspace Montreal, QC}
+\\[\fpeval{\baseheight}]
+
+Role(s):
+
 \begin{tightitemize}
-\item Proposed, designed and implemented an intern time-sheet tool that
-  permitted HR to move away from pen/paper. Impacting 3000 interns.
-  This project saves Human Resources approximately 1200 hours, every year.
-\item Reduced the time required to complete a manual database
-  migration by over 200 hours.
-\item Automated various tasks of my team members.
-\item Technology used: PHP, YII, HTML, CSS, jQuery, MySQL, git
+    \item Develop and translate technical documentation for SAP;
+\end{tightitemize}
+
+\\[\fpeval{\baseheight}]
+
+Product(s):
+\begin{tightitemize}
+    \item A student time sheet portal which saves HR 1200 hours every year.
+    \item A VBA macro which saved 200 hours of manual Excel to MySQL database migration;
+    \item Various team-wide work-flow improvements;
+    \item Technical Documentation.
+\end{tightitemize}
+
+\\[\fpeval{\baseheight}]
+
+Technologies: \\
+\begin{tightitemize}
+    \item Time Sheet Portal\textemdash PHP, YII, MySQL, HTML, jQuery, CSS, git;
+    \item Database Migration, work-flow improvements\textemdash Excel and PowerPoint VBA;
+    \item Technical Documentation\textemdash SAP, Camtasia Studio, Assima.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -209,14 +258,12 @@ Groups: HackMcGill, McGill Outdoors Club. CGPA: 3.6
 
 \section{Projects}
 
-\runsubsection{Shopify Store Statistics}
-\descript{| \thinspace \href{http://redpointapps.com}{redpointapps.com}}
+\runsubsection{Store Statistics for Shopify}
+\descript{| \thinspace \href{http://apps.shopify.com/store-statistics}{apps.shopify.com/store-statistics}}
 
 \location{April 2015 – Present \thinspace | \thinspace Montreal, QC}
-A Software as a Service Shopify App enabling store owners to have
-their store's most important statistics(Customer Lifetime Value,
-Average Order Value, Returning Customers, etc.) at a glance without
-wasting hours in Excel.
+A Software as a Service enabling store owners to have their store's most important
+statistics in one click without wasting hours in Excel.
 \sectionspace
 
 \runsubsection{bestcase}
@@ -230,7 +277,7 @@ An A/B testing library.
 \descript{| \thinspace \href{http://charlespwd.github.io/time-travel-pong}{charlespwd.github.io/time-travel-pong}}
 
 \location{March 2015 \thinspace | \thinspace Montreal, QC}
-Pong in the browser with a twist: you can go back in time.
+The game Pong with a twist: you can go back in time.
 \sectionspace
 
 \runsubsection{My-McGill Email Service}
@@ -253,14 +300,15 @@ A JavaScript abstraction of McGill's registration system.
 \descript{| \thinspace Solo Backpacker}
 
 \location{January 2014 – May 2014 \thinspace | \thinspace Singapore, Malaysia, Thailand, Laos, Nepal}
-An amazing experience that forced me to constantly step outside of my
-comfort zone.
 The Annapurna circuit trek, rock-climbing in Krabi and Thakhek,
 motorbike travel, bungee jumping, canyon swing, yoga and lots
 of books.
 
 \sectionspace % Some whitespace after the section
 
+\\[\fpeval{\baseheight * \golden ^ 4}]
+% \center
+\textit{Outside of work, I read and climb rocks.}
 % %------------------------------------------------
 % % Awards
 % %------------------------------------------------
@@ -273,25 +321,6 @@ of books.
 %
 % \sectionspace % Some whitespace after the section
 %
-
-%----------------------------------------------------------------------------------------
-%	SECOND PAGE (EXAMPLE)
-%----------------------------------------------------------------------------------------
-
-\newpage % Start a new page
-
-%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-\namesection{Charles P.}{Clermont}{}
-
-\section{Example Section}
-
-%\end{minipage} % The end of the left column
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
-%\section{Example Section 2}
-
-%\end{minipage} % The end of the right column
 
 %----------------------------------------------------------------------------------------
 

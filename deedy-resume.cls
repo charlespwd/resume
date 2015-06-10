@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[top=1.5cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[top=1.5cm, bottom=1.5cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
 
 %%%%
@@ -74,8 +74,9 @@ Last Updated on \today % Last Updated text
 \centering{ % Center the contact information
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/lato/]{Lato-LigIta}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
-\\[0.20cm] % whitespace before line
+\\[\baseheight] % whitespace before line
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
+\vspace{\fpeval{-\baseheight*\golden}}
 }
 
 %----------------------------------------------------------------------------------------
@@ -86,8 +87,8 @@ Last Updated on \today % Last Updated text
 
 \titlespacing{\section}{0pt}{0pt}{\fpeval{\baseheight * \golden}} % Removes the spacing around the main section titles
 \titlespacing{\subsection}{0pt}{0pt}{0pt} % Removes the spacing around the subsections
-\newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
-\newcommand{\insectionspace}{\vspace{4pt}} % Defines a command to add a set amount of space after sections and subsections
+\newcommand{\sectionspace}{\vspace{\fpeval{\baseheight * \golden * \golden * \golden }}} % Defines a command to add a set amount of space after sections and subsections
+\newcommand{\insectionspace}{\vspace{\fpeval{\baseheight * \golden * \golden}}} % Defines a command to add a set amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
 \color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont\uppercase}{}{0em}{}
