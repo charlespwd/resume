@@ -70,7 +70,7 @@ Last Updated on \today % Last Updated text
 
 \usepackage{titlesec} % Required for customizing section/subsection/etc titles
 
-\titlespacing{\section}{0pt}{0pt}{0pt} % Removes the spacing around the main section titles
+\titlespacing{\section}{0pt}{0pt}{0.125cm} % Removes the spacing around the main section titles
 \titlespacing{\subsection}{0pt}{0pt}{0pt} % Removes the spacing around the subsections
 \newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
 \newcommand{\insectionspace}{\vspace{4pt}} % Defines a command to add a set amount of space after sections and subsections
@@ -85,10 +85,10 @@ Last Updated on \today % Last Updated text
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 \newcommand{\descript}[1]{ % Used for describing the subsection either on the same line or underneath
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{14pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{14pt}\selectfont {#1 \\[.0625cm]} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{11pt}{13pt}\selectfont {#1\\} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
