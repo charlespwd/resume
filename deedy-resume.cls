@@ -11,6 +11,20 @@
 \usepackage[top=1.5cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
 
+%%%%
+% Provide the command \fpeval as a copy of the code-level \fp_eval:n.
+\usepackage{expl3}[2012-07-08]
+\ExplSyntaxOn
+\cs_new_eq:NN \fpeval \fp_eval:n
+\ExplSyntaxOff
+%%%%
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+\def \baseheight {.05572809cm}
+\def \golden {1.61803398875}
+
 %----------------------------------------------------------------------------------------
 %	COLORS
 %----------------------------------------------------------------------------------------
@@ -70,7 +84,7 @@ Last Updated on \today % Last Updated text
 
 \usepackage{titlesec} % Required for customizing section/subsection/etc titles
 
-\titlespacing{\section}{0pt}{0pt}{0.125cm} % Removes the spacing around the main section titles
+\titlespacing{\section}{0pt}{0pt}{\fpeval{\baseheight * \golden}} % Removes the spacing around the main section titles
 \titlespacing{\subsection}{0pt}{0pt}{0pt} % Removes the spacing around the subsections
 \newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
 \newcommand{\insectionspace}{\vspace{4pt}} % Defines a command to add a set amount of space after sections and subsections
@@ -79,16 +93,17 @@ Last Updated on \today % Last Updated text
 \color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
+\flushleft
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 \newcommand{\descript}[1]{ % Used for describing the subsection either on the same line or underneath
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{14pt}\selectfont {#1 \\[.0625cm]} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{14pt}\selectfont {#1 \\[\fpeval{\baseheight * \golden}]} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
-\color{headings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{11pt}{13pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{11pt}{13pt}\selectfont {#1 \\[0.0625cm]} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
